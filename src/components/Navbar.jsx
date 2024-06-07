@@ -15,7 +15,14 @@ function Navbar() {
         </div>
         <div className='logo'>
             {/* use hamburger menu */}
-        <img src="/images/" alt="hamburger menu" />
+            <div className='hamburger_menu color green'>
+              <span>
+                <div></div>
+                <div></div>
+                <div></div>
+              </span>
+            </div>
+        {/* <img src="/images/" alt="hamburger menu" /> */}
         </div>
     </div>
   )
