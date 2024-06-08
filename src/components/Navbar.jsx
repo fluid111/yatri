@@ -8,8 +8,8 @@ function Navbar() {
 
   return (
     <div className='p-[5px] bg-black'>
-      <div className='nav flex w-full bg-black justify-between h-[70px]'>
-        <div className='logo bg-black size-[70px] place-content-center'>
+      <div className='nav flex w-full bg-black justify-between h-[65px]'>
+        <div className='logo bg-black pl-[5px] size-[70px] place-content-center'>
           <img src="/images/yatri_logo.png" alt="logo" />
         </div>
         {
@@ -25,13 +25,13 @@ function Navbar() {
             }} className='text-buttons text-2xl h-[70px] md:hidden block'/>
         }
         <div className='header hidden md:flex'>
-          <div className='links text-blue-300 space-x-[45px] pt-[20px] pr-[20px] bg-black size-full text-right text-lg'>
+          <div className='links text-buttons space-x-[45px] pt-[18px] pr-[18px] bg-black size-full text-right text-base'>
             {["MODELS", "ENERGY", "TEST RIDE"].map((item, index) => {
               return <a key={index} className='nav_link'>{item}</a>
             })}
           </div>
         </div>
-        <ul className={`${toggle ? 'left-[0]' : 'left-[-100%]'} links md:hidden w-full h-screen fixed bg-background top-[80px] text-blue-300`}>
+        <ul className={`${toggle ? 'left-[0]' : 'left-[-100%]'} links duration-500 md:hidden w-full h-screen fixed bg-background top-[80px] text-blue-300`}>
           <li className='p-5'>
             MODELS
           </li>
