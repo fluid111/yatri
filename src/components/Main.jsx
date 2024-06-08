@@ -6,13 +6,13 @@ function Main() {
 
   useEffect(() => {
     if (videoRef.current) {
-      // videoRef.current.play();
-      videoRef.current.playbackRate = 0.6;
+      videoRef.current.play();
+      // videoRef.current.playbackRate = 0.5;
     }
   }, []);
   return (
     <div className='w-full h-screen bg-background'>
-      <div className="text text-blue-300">
+      <div className="text text-white">
             Reinventing Urban Mobility
       </div>
       <div className="size-fit">
