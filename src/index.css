@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
 @font-face {
     font-family: "bebas";
     src: url("..public/fonts/Bebas_Neue/BebasNeue-Regular.ttf");

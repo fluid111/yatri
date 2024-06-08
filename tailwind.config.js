@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
        bebas: ["Bebas Neue","sans-serif"],
+       heebo: ["Heebo","self-serif"],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
