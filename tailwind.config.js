@@ -9,6 +9,10 @@ export default {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+      colors: {
+        background: '#181818',
+        buttons: '#00CCCC',
       }
     },
   },

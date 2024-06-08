@@ -2,7 +2,7 @@ import React from 'react'
 
 function Main() {
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen bg-background'>
       <div className="text text-blue-300">
             Reinventing Urban Mobility
       </div>
