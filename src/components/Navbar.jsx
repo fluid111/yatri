@@ -32,7 +32,7 @@ function Navbar() {
             })}
           </div>
         </div>
-        <ul className={`${toggle ? 'left-[0] absolute' : 'left-[-100%]'} links duration-500 md:hidden w-full h-screen fixed bg-background top-[70px] text-blue-300 absolute`}>
+        <ul className={`${toggle ? 'left-[0] absolute' : 'left-[-100%]'} links duration-500 md:hidden w-full h-screen fixed bg-background top-[70px] text-blue-300`}>
           <li className='p-5'>
             MODELS
           </li>

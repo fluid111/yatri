@@ -17,9 +17,14 @@ function Main() {
         {/* image or video */}
         <video ref={videoRef} src='/videos/yatri_video.webm' muted loop autoplay className="w-full h-full object-cover"></video>
       </div> 
-      <div className={"text absolute text-white top-0 left-0 pl-[140px] pt-[130px] text-5xl "}>
-        <div className='pb-[18px] font-bold font-heebo'>Reinventing</div>
-        <div className='pt-[5px] space-x-[13px] object-fit-cover font-semibold flex font-heebo'>Urban <div className="pl-[25px] text-blue-300">Mobility</div></div>
+      <div className="md:text md:absolute md:text-white md:flex-col md:top-0 md:left-0 md:pl-[140px] md:pt-[130px] md:text-5xl">
+        <div className='md:pt-[5px] md:space-x-[13px] md:object-fit-cover md:flex md:font-heebo hidden'>
+          <div className='md:pb-[18px] md:font-bold md:object-fit-cover md:font-heebo'>Reinventing </div>
+        <div className="md:flex md:font-semibold">
+          Urban 
+          <div className="md:pl-[25px] md:font-semibold md:text-blue-300">Mobility</div>
+          </div>
+          </div>
       </div>
     </div>
   );
