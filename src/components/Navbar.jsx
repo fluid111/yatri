@@ -33,7 +33,7 @@ function Navbar({toggle, setToggle}) {
           </div>
         </div>
 
-        <ul className={`${toggle ? 'left-[0] absolute' : 'left-[-100%]'} links duration-500 md:hidden w-full h-screen fixed bg-background top-[70px] text-blue-300 absolute`}>
+        <ul className={`${toggle ? 'left-[0] absolute' : 'left-[-100%]'} links duration-200 md:hidden w-full h-screen fixed bg-background top-[70px] text-blue-300 absolute`}>
           <li className='p-5'>MODELS</li>
           <li className='p-5'>ENERGY</li>
           <li className='p-5'>TEST RIDE</li>
