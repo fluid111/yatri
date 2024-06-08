@@ -16,7 +16,7 @@ function Navbar() {
             })}
             </div>
             <div className='hamburger_menu bg-blue-500 size-[70px] text-xs'>
-            {/* use hamburger menu */}
+            {/* make hamburger menu hamburger menu */}
               <span>
                 <div>fh</div>
                 <div>dghd</div>
