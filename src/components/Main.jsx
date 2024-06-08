@@ -15,9 +15,9 @@ function Main() {
       <div className="text text-white">
             Reinventing Urban Mobility
       </div>
-      <div className="size-fit">
+      <div className="object-fit-cover">
           {/* image or video */}
-          <video ref={videoRef} src='/videos/yatri_video.webm' muted loop></video>
+          <video ref={videoRef} src='/videos/yatri_video.webm' muted loop autoplay className="w-full h-full object-cover"></video>
         </div> 
     </div>
   )
