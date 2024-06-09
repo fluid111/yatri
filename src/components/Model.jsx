@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { RiArrowLeftWideFill, RiArrowRightWideFill } from 'react-icons/ri';
+import './animations.css';
 
 const Model = () => {
-  const [currentModel, setCurrentModel] = useState(0); // 0 for Project 1, 1 for Project 2
+  const [currentModel, setCurrentModel] = useState(0);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
 
   const toggleDescription = () => {
@@ -17,35 +19,82 @@ const Model = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="bike_name flex justify-between w-full px-4 py-2">
-        {/* Buttons */}
-        <div className="flex">
-          <button
-            onClick={() => changeModel('prev')}
-            className="mr-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
-          >
-            &larr;
-          </button>
-          <button
-            onClick={() => changeModel('next')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
-          >
-            &rarr;
-          </button>
-        </div>
-        <div>MODELS</div>
-      </div>
-
-      <div className="bike relative">
+    <div className="relative">
+      <div className="bike relative h-screen">
         {currentModel === 0 && (
-          <div className="project_zero">
-            <img src="/images/Pzero/Pzero_side.jpg" alt="Project 1" />
+          <div className="project_zero relative h-full">
+            <img src="/images/Pzero/Pzero_side.jpg" alt="Project zero" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center">
+              <div className="text-white text-center text-4xl font-bold mb-4">MODELS</div>
+              <div className="flex justify-center items-center">
+                <button
+                  onClick={() => changeModel('prev')}
+                  className="mr-2 bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                  <RiArrowLeftWideFill className="text-buttons bg-transparent size-[40px]" />
+                </button>
+                <button
+                  onClick={() => changeModel('next')}
+                  className="bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                  <RiArrowRightWideFill className="text-buttons bg-transparent size-[40px]" />
+                </button>
+              </div>
+            </div>
+            {isDescriptionVisible && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="bg-gray-200 p-4 rounded slide-in-right">
+                  <p>
+                    This is a description of the current model. You can add more details
+                    here.
+                  </p>
+                  <a
+                    href="#"
+                    className="inline-block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            )}
           </div>
         )}
         {currentModel === 1 && (
-          <div className="project_one">
-            <img src="/images/Pzero/Pzero_side-1.png" alt="Project 2" />
+          <div className="project_one relative h-full">
+            <img src="/images/Pzero/Pzero_side-1.png" alt="Project one" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center">
+              <div className="text-white text-center text-4xl font-bold mb-4">MODELS</div>
+              <div className="flex justify-center items-center">
+                <button
+                  onClick={() => changeModel('prev')}
+                  className="mr-2 bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                  <RiArrowLeftWideFill className="text-buttons bg-transparent size-[40px]" />
+                </button>
+                <button
+                  onClick={() => changeModel('next')}
+                  className="bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                >
+                  <RiArrowRightWideFill className="text-buttons bg-transparent size-[40px]" />
+                </button>
+              </div>
+            </div>
+            {isDescriptionVisible && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="bg-gray-200 p-4 rounded slide-in-right">
+                  <p>
+                    This is a description of the current model. You can add more details
+                    here.
+                  </p>
+                  <a
+                    href="#"
+                    className="inline-block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            )}
           </div>
         )}
         <button
@@ -55,21 +104,6 @@ const Model = () => {
           +
         </button>
       </div>
-
-      {isDescriptionVisible && (
-        <div className="slider bg-gray-200 p-4 mt-4 rounded">
-          <p>
-            This is a description of the current model. You can add more details
-            here.
-          </p>
-          <a
-            href="#"
-            className="inline-block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          >
-            Learn More
-          </a>
-        </div>
-      )}
     </div>
   );
 };
