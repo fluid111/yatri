@@ -40,7 +40,7 @@ const Model = () => {
       <div className="bike relative">
         {currentModel === 0 && (
           <div className="project_zero">
-            <img src="/images/Pzero/Pzero_side.jpg" alt="Project 1" />
+            <img src="/images/Pzero/Pzero_side.png" alt="Project 1" />
           </div>
         )}
         {currentModel === 1 && (
@@ -70,6 +70,10 @@ const Model = () => {
           </a>
         </div>
       )}
+      <div className="touchpad bg-black">
+        {/* touch screen for bike selection */}
+<img src="/images/Pzero/Pzero_top11.png" alt="Project 2" />
+      </div>
     </div>
   );
 };
