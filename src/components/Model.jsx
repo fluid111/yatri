@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RiArrowLeftWideFill, RiArrowRightWideFill } from 'react-icons/ri';
+import { LuPlus } from "react-icons/lu";
 import './animations.css';
 
 const Model = () => {
@@ -23,21 +24,21 @@ const Model = () => {
       <div className="bike relative h-screen">
         {currentModel === 0 && (
           <div className="project_zero relative h-full">
-            <img src="/images/Pzero/Pzero_side.jpg" alt="Project zero" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 flex flex-col justify-center items-center">
-              <div className="text-white text-center text-4xl font-bold mb-4">MODELS</div>
-              <div className="flex justify-center items-center">
+            <img src="/images/Pzero/Pzero_side.jpg" alt="Project zero" className="md:w-full md:h-full md:object-cover object-cover" />
+            <div className="absolute inset-0 flex-col justify-center w-full h-full">
+              <div className="text-white text-center md:text-4xl text-xl md:h-[200px] h-[40px] md:pt-[25px] pt:[5px] font-heebo font-bold mb-4">PROJECT ZERO</div>
+              <div className="flex w-full items-left">
                 <button
                   onClick={() => changeModel('prev')}
-                  className="mr-2 bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                  className="mr-2 bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 md:px-4 pl-[2px] rounded"
                 >
-                  <RiArrowLeftWideFill className="text-buttons bg-transparent size-[40px]" />
+                  <RiArrowLeftWideFill className="text-buttons bg-transparent md:size-[40px] size-[30px]" />
                 </button>
                 <button
                   onClick={() => changeModel('next')}
-                  className="bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                  className="bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 md:px-4 rounded"
                 >
-                  <RiArrowRightWideFill className="text-buttons bg-transparent size-[40px]" />
+                  <RiArrowRightWideFill className="text-buttons bg-transparent md:size-[40px] size-[30px]" />
                 </button>
               </div>
             </div>
@@ -50,7 +51,7 @@ const Model = () => {
                   </p>
                   <a
                     href="#"
-                    className="inline-block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    className="inline-block font-heebo mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   >
                     Learn More
                   </a>
@@ -61,21 +62,21 @@ const Model = () => {
         )}
         {currentModel === 1 && (
           <div className="project_one relative h-full">
-            <img src="/images/Pzero/Pzero_side-1.png" alt="Project one" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 flex flex-col justify-center items-center">
-              <div className="text-white text-center text-4xl font-bold mb-4">MODELS</div>
-              <div className="flex justify-center items-center">
+            <img src="/images/Pzero/Pzero_side-1.png" alt="Project one" className="md:w-full md:h-full md:object-cover object-cover" />
+            <div className="absolute inset-0 flex-col justify-center w-full h-full items-center">
+              <div className="text-gray-300 text-center md:text-4xl text-xl md:h-[200px] h-[40px] md:pt-[25px] pt:[5px] font-heebo font-bold mb-4">PROJECT ONE</div>
+              <div className="flex w-full items-left">
                 <button
                   onClick={() => changeModel('prev')}
-                  className="mr-2 bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                  className="mr-2 bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 md:px-4 pl-[2px] rounded"
                 >
-                  <RiArrowLeftWideFill className="text-buttons bg-transparent size-[40px]" />
+                  <RiArrowLeftWideFill className="text-buttons bg-transparent md:size-[40px] size-[30px]" />
                 </button>
                 <button
                   onClick={() => changeModel('next')}
-                  className="bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 px-4 rounded"
+                  className="bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 md:px-4  rounded"
                 >
-                  <RiArrowRightWideFill className="text-buttons bg-transparent size-[40px]" />
+                  <RiArrowRightWideFill className="text-buttons bg-transparent md:size-[40px] size-[30px]" />
                 </button>
               </div>
             </div>
@@ -97,12 +98,14 @@ const Model = () => {
             )}
           </div>
         )}
+        <div className=''>
         <button
           onClick={toggleDescription}
-          className="absolute bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="absolute md:top-[300px] opacity-50 top-[102px] md:left-[30px] left-[12px] bg-buttons hover:opacity-80 text-white font-bold py-2 px-4 rounded"
         >
-          +
+          <LuPlus className='md:w-[60px] w-[17px] md:h-[40px] h-[15px]'/>
         </button>
+        </div>
       </div>
     </div>
   );
