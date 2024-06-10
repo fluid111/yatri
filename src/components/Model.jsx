@@ -101,9 +101,9 @@ const Model = () => {
         <div className=''>
         <button
           onClick={toggleDescription}
-          className="absolute md:top-[300px] opacity-50 top-[102px] md:left-[30px] left-[12px] bg-buttons hover:opacity-80 text-white font-bold py-2 px-4 rounded"
+          className="absolute  md:top-[300px] opacity-50 top-[102px] md:left-[44px] left-[13px] bg-buttons hover:opacity-80 text-white font-bold py-2 px-4 rounded-[30px] md:rounded-[50px]"
         >
-          <LuPlus className='md:w-[60px] w-[17px] md:h-[40px] h-[15px]'/>
+          <LuPlus className='md:w-[30px] w-[15px] md:h-[40px] h-[15px]'/>
         </button>
         </div>
       </div>
