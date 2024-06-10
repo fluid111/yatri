@@ -20,7 +20,7 @@ const Model = ({toggle, setToggle}) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative]">
       <div className="bike relative h-screen">
         {currentModel === 0 && (
           <div className={`project_zero relative h-full
@@ -106,7 +106,7 @@ const Model = ({toggle, setToggle}) => {
             )}
           </div>
         )}
-        <div className=''>
+        <div className={`${toggle ? 'hidden md:hidden' : ''}`}>
           {/* This is + button */}
         <button
           onClick={toggleDescription}

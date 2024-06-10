@@ -11,7 +11,7 @@ function Main({toggle, setToggle}) {
   }, []);
 
   return (
-    <div className=' bg-background'>
+    <div className=''>
       <div className="object-fit-cover">
         {/* image or video */}
         <video ref={videoRef}
