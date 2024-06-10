@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Main from './components/Main';
 import { useState } from 'react';
 import Model from './components/Model';
-
+import Footer from './components/Footer';
 function App() {
   const[toggle, setToggle] = useState(false);
 
@@ -12,6 +12,7 @@ function App() {
       <Navbar toggle={toggle} setToggle={setToggle} />
       <Main toggle={toggle} />
       <Model toggle={toggle}/>
+      <Footer/>
     </div>
   )
 }

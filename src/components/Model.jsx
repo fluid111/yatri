@@ -20,15 +20,16 @@ const Model = ({toggle, setToggle}) => {
   };
 
   return (
-    <div className="relative]">
-      <div className="bike relative h-screen">
+    <div className='bg-background h-[670px]'>
+    <div className="relative m-[15px]">
+      <div className="bike relative bg-gradient h-screen ">
         {currentModel === 0 && (
-          <div className={`project_zero relative h-full
+          <div className={`project_zero relative h-full pl-[150px]
             ${toggle ? 'hidden md:hidden' : ''}`
             }>
-            <img src="/images/Pzero/Pzero_side.png" alt="Project zero" className="md:w-full md:h-full md:object-cover object-cover" />
+            <img src="/images/Pzero/Pzero_side.png" alt="Project zero" className="md:h-[600px] md:object-cover object-cover" />
             <div className="absolute inset-0 flex-col justify-center w-full h-full">
-              <div className="text-white text-center md:text-4xl text-xl md:h-[200px] h-[40px] md:pt-[25px] pt:[5px] font-heebo font-bold mb-4">PROJECT ZERO</div>
+              <div className="text-gray-300 text-center md:text-4xl text-xl md:h-[200px] h-[40px] md:pt-[25px] pt:[5px] font-heebo font-bold mb-4">PROJECT ZERO</div>
               <div className="flex w-full items-left">
 
                 <button
@@ -50,15 +51,15 @@ const Model = ({toggle, setToggle}) => {
 
             {isDescriptionVisible && (
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                <div className="bg-gray-200 p-4 rounded slide-in-right">
+                <div className="p-4 rounded slide-in-right">
                   <p>
                     This is a description of the current model. You can add more details
                     here.
                   </p>
                   <a href="#"
-                    className="inline-block font-heebo mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    className="inline-block font-heebo mt-2 bg-buttons bg-opacity-50 text-white font-bold py-2 px-4 rounded"
                   >
-                    Learn More
+                    See Details.
                   </a>
                 </div>
               </div>
@@ -66,10 +67,10 @@ const Model = ({toggle, setToggle}) => {
           </div>
         )}
         {currentModel === 1 && (
-          <div className={`project_one relative h-full
+          <div className={`project_one relative h-full pl-[150px]
             ${toggle ? 'hidden md:hidden' : ''}`
             }>
-            <img src="/images/Pzero/Pzero_side-1.png" alt="Project one" className="md:w-full md:h-full md:object-cover object-cover" />
+            <img src="/images/Pzero/Pzero_side-1.png" alt="Project one" className="md:h-[550px] md:object-cover object-cover" />
             <div className="absolute inset-0 flex-col justify-center w-full h-full items-center">
               <div className="text-gray-300 text-center md:text-4xl text-xl md:h-[200px] h-[40px] md:pt-[25px] pt:[5px] font-heebo font-bold mb-4">PROJECT ONE</div>
               <div className="flex w-full items-left">
@@ -90,16 +91,16 @@ const Model = ({toggle, setToggle}) => {
             </div>
             {isDescriptionVisible && (
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                <div className="bg-gray-200 p-4 rounded slide-in-right">
+                <div className="p-4 rounded slide-in-right">
                   <p>
                     This is a description of the current model. You can add more details
                     here.
                   </p>
                   <a
                     href="#"
-                    className="inline-block mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    className="inline-block mt-2 bg-buttons bg-opacity-50 hover:bg-opacity-70 font-heebo text-white font-bold py-2 px-4 rounded"
                   >
-                    Learn More
+                    See Details.
                   </a>
                 </div>
               </div>
@@ -116,6 +117,7 @@ const Model = ({toggle, setToggle}) => {
         </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

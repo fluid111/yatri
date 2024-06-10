@@ -12,14 +12,14 @@ function Main({toggle, setToggle}) {
 
   return (
     <div className=''>
-      <div className="object-fit-cover">
+      <div className="object-fit-cover h-[500px] bg-background">
         {/* image or video */}
         <video ref={videoRef}
                src='/videos/yatri_video.webm'
                muted
                loop
                autoPlay
-               className="w-full h-full object-cover"></video>
+               className="w-full bg-background h-full object-cover"></video>
       </div> 
       <div className={`text absolute object-cover transition-opacity delay-300 duration-300 text-white top-0 left-0 md:pl-[140px] md:pt-[130px] pl-[45px] pt-[70px] text-2xl md:text-5xl
                        ${toggle ? 'hidden md:hidden' : ''}`

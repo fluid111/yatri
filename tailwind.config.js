@@ -13,6 +13,7 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient': "url(/images/gradient.jpeg)",
       },
       colors: {
         background: '#181818',
