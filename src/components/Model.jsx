@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { RiArrowLeftWideFill, RiArrowRightWideFill } from 'react-icons/ri';
+import { LuPlus } from "react-icons/lu";
+import './animations.css';
 
-const Model = () => {
-  const [currentModel, setCurrentModel] = useState(0); // 0 for Project 1, 1 for Project 2
+const Model = ({toggle, setToggle}) => {
+  const [currentModel, setCurrentModel] = useState(0);
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false);
 
   const toggleDescription = () => {
@@ -12,35 +15,54 @@ const Model = () => {
     if (direction === 'next') {
       setCurrentModel(currentModel === 0 ? 1 : 0);
     } else {
-      setCurrentModel(currentModel === 0 ? 1 : 0);
+      setCurrentModel(currentModel === 1 ? 0 : 1);
     }
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="bike_name flex justify-between w-full px-4 py-2">
-        {/* Buttons */}
-        <div className="flex">
-          <button
-            onClick={() => changeModel('prev')}
-            className="mr-2 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
-          >
-            &larr;
-          </button>
-          <button
-            onClick={() => changeModel('next')}
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
-          >
-            &rarr;
-          </button>
-        </div>
-        <div>MODELS</div>
-      </div>
-
-      <div className="bike relative">
+    <div className="relative">
+      <div className="bike relative h-screen">
         {currentModel === 0 && (
-          <div className="project_zero">
-            <img src="/images/Pzero/Pzero_side.png" alt="Project 1" />
+          <div className={`project_zero relative h-full
+            ${toggle ? 'hidden md:hidden' : ''}`
+            }>
+            <img src="/images/Pzero/Pzero_side.jpg" alt="Project zero" className="md:w-full md:h-full md:object-cover object-cover" />
+            <div className="absolute inset-0 flex-col justify-center w-full h-full">
+              <div className="text-white text-center md:text-4xl text-xl md:h-[200px] h-[40px] md:pt-[25px] pt:[5px] font-heebo font-bold mb-4">PROJECT ZERO</div>
+              <div className="flex w-full items-left">
+
+                <button
+                  onClick={() => changeModel('prev')}
+                  className="mr-2 bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 md:px-4 pl-[2px] rounded"
+                >
+                  <RiArrowLeftWideFill className="text-buttons bg-transparent md:size-[40px] size-[30px]" />
+                </button>
+
+                <button
+                  onClick={() => changeModel('next')}
+                  className="bg-transparent hover:bg-neutral-800 text-gray-800 font-bold py-2 md:px-4 rounded"
+                >
+                  <RiArrowRightWideFill className="text-buttons bg-transparent md:size-[40px] size-[30px]" />
+                </button>
+
+              </div>
+            </div>
+
+            {isDescriptionVisible && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="bg-gray-200 p-4 rounded slide-in-right">
+                  <p>
+                    This is a description of the current model. You can add more details
+                    here.
+                  </p>
+                  <a href="#"
+                    className="inline-block font-heebo mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </div>
+            )}
           </div>
         )}
         {currentModel === 1 && (
@@ -70,10 +92,6 @@ const Model = () => {
           </a>
         </div>
       )}
-      <div className="touchpad bg-black">
-        {/* touch screen for bike selection */}
-<img src="/images/Pzero/Pzero_top11.png" alt="Project 2" />
-      </div>
     </div>
   );
 };
