@@ -11,7 +11,7 @@ function App() {
     <div className='w-full h-screen bg-zinc-900 text-white'>
       <Navbar toggle={toggle} setToggle={setToggle} />
       <Main toggle={toggle} />
-      <Model/>
+      <Model toggle={toggle}/>
     </div>
   )
 }
