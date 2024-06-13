@@ -12,22 +12,13 @@ const Footer = () => {
             <h3 className="text-xl text-gray-300 font-bold mb-4">Product</h3>
             <ul className="text-gray-500">
               <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Hirex All-in-One</a>
+                <a href="#">Project Zero</a>
               </li>
               <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Hirex Antenna</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Integrations</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Customers</a>
+                <a href="#">Project One</a>
               </li>
               <li className="mb-2 hover:text-gray-300 transition duration-300">
                 <a href="#">Pricing</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Security</a>
               </li>
             </ul>
           </div>
@@ -35,13 +26,10 @@ const Footer = () => {
             <h3 className="text-xl text-gray-300 font-bold mb-4">Resources</h3>
             <ul className="text-gray-500">
               <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Support</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
                 <a href="#">Blog</a>
               </li>
               <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Podcast</a>
+                <a href="#">Energy</a>
               </li>
             </ul>
           </div>
@@ -52,9 +40,6 @@ const Footer = () => {
                 <a href="#">Our Story</a>
               </li>
               <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Career</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
                 <a href="#">Team</a>
               </li>
               <li className="mb-2 hover:text-gray-300 transition duration-300">
@@ -63,28 +48,16 @@ const Footer = () => {
               <li className="mb-2 hover:text-gray-300 transition duration-300">
                 <a href="#">Privacy</a>
               </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Service Level Agreement</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">GDPR</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Status</a>
-              </li>
-              <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Cookie Preferences</a>
-              </li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl text-gray-300 font-bold mb-4">Developers</h3>
             <ul className="text-gray-500">
               <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">API</a>
+                <a href="#">Profiles</a>
               </li>
               <li className="mb-2 hover:text-gray-300 transition duration-300">
-                <a href="#">Vulnerability Disclosure</a>
+                <a href="#">Contacts</a>
               </li>
             </ul>
           </div>
