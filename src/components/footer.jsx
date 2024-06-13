@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaFacebook } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -89,13 +92,14 @@ const Footer = () => {
         <div className="flex justify-center mt-8">
           <div className="text-gray-500 flex items-center">
             <a href="#" className="mr-4 hover:text-gray-300 transition duration-300">
-              <i className="fab fa-facebook fa-2x">i</i>
+              <i className="fab fa-facebook fa-2x"><FaFacebook /></i>
             </a>
             <a href="#" className="mr-4 hover:text-gray-300 transition duration-300">
-              <i className="fab fa-twitter fa-2x">i</i>
+              <i className="fab fa-twitter fa-2x"><BsTwitterX />
+              </i>
             </a>
             <a href="#" className="hover:text-gray-300 transition duration-300">
-              <i className="fab fa-instagram fa-2x">i</i>
+              <i className="fab fa-instagram fa-2x"><RiInstagramFill /></i>
             </a>
           </div>
         </div>
