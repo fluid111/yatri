@@ -22,7 +22,7 @@ const Model = ({toggle, setToggle}) => {
   return (
     <div className='bg-background h-[670px]'>
     <div className="relative m-[15px]">
-      <div className="bike relative bg-gradient h-[655px] ">
+      <div className="bike relative bg-zinc-900 h-[655px] ">
         {currentModel === 0 && (
           <div className={`project_zero relative h-full pl-[150px]
             ${toggle ? 'hidden md:hidden' : ''}`

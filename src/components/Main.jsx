@@ -12,7 +12,7 @@ function Main({toggle, setToggle}) {
 
   return (
     <div className=''>
-      <div className="object-fit-cover h-[500px] bg-background">
+      <div className="object-fit-cover h-[500px] bg-zinc-600">
         {/* image or video */}
         <video ref={videoRef}
                src='/videos/yatri_video.webm'
